@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landing Page</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+
+    #pagewrap{
+    	width:100%;
+    	height: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .navbar-nav{
+        text-align: center;
+    	justify-content: space-around;
+    }
+     #header{
+    	top: 0;
+    	left:0;
+    	position: fixed;
+    	width:100%;
+    	z-index: 10;
+    	 }
+  
+
+
+#how-it-works {
+  position: relative;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+}
+#news{
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+#service{
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  border: 6px solid black;
+  max-width: 2000px;
+}
+#service-1, #service-2, #service-3, #service-4, #service-5,
+#service-6{
+  display: block;
+	text-align: center;
+  height: 100%;
+  width: 450px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 50px;
+  border:4px solid black;
+	}
+  #service_img{
+    height: 100%;
+    width: 100%;
+
+  }
+  #descripiton{
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+    color: black;
+    font-family: arial;
+    background-color: orange;
+    border-top: 4px solid black;
+    margin-bottom: 0px;
+  }
+#get-in-touch {
+  background-color:#C1C1C1CB;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: 0px;
+}
+
+#choose_us{
+  display: flex;
+  position: relative;
+  bottom: 55px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#fast, #experience, #cheap {
+width:  300px;
+text-align: center; 
+border: 1px solid black;
+margin: 10px;
+height: auto;
+
+}
+
+#get-in-touch input[type='email'] {
+  max-width: 395px;
+  width: 100%;
+  padding: 5px;
+}
+
+#get-in-touch input[type='submit'] {
+
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 10px
+  border: 2px double black;
+  background-color: #f1c40f;
+  text-align: center;
+  padding-bottom: 29px;
+}
+
+#get-in-touch input[type='submit']:hover {
+  background-color: #FF5D00FF;
+  transition: background-color 1s;
+}
+
+@media screen and (min-width: 2000px) {
+    
+   #service{
+  margin: 0 auto;
+  margin-bottom: 100px;
+   }
+  h2{
+    margin-bottom: 100px;
+  }
+  }
+  @media screen and (max-width:480px) {
+    #how-it-works > iframe {
+    width: 90%;
+}
+
+#get-in-touch input[type='email'] {
+  max-width: 60%;
+  width: 100%;
+  padding: 1px;
+}
+
+#get-in-touch input[type='submit'] {
+
+  max-width: 100px;
+  width: 100%;
+  height: 25px;
+  margin: 0 auto;
+  border: 1px double black;
+  background-color: #f1c40f;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#get-in-touch input[type='submit']:hover {
+  background-color: #FF5D00FF;
+  transition: background-color 1s;
+}
+#header{
+  height: 10%;
+  }
+  #descripiton{
+    justify-content: center;
+    width: 100%;
+    font-size: 15px;
+    color: black;
+    font-family: arial;
+    background-color: orange;
+    border-top: 4px solid black;
+    margin-bottom: 0px;
+  }
+  #service-1, #service-2, #service-3, #service-4, #service-5,
+#service-6{
+  display: block;
+  text-align: center;
+  height: 100%;
+  width: 450px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 20px;
+  border:4px solid black;
+  }
+}
+</style>
+</head>
+<body>
+	<div id="pagewrap">
+	<header id="header">
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav-bar">
+       <img src="1.JPG" alt="" height="70px" width="auto" class="logo" id="header-img">
+       <h1>WeClean</h1>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active" class="nav-link">Home</a>
+                <a href="#service" class="nav-item nav-link" class="nav-link">Services</a>
+                <a href="#choose_us" class="nav-item nav-link" class="nav-link">Why choose us</a>
+                <a href="#" class="nav-item nav-link disabled" tabindex="-1" class="nav-link" >Sign up</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="#get-in-touch" class="nav-item nav-link">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<section id="how-it-works">
+      <iframe
+        id="video"
+        height="400px"
+        width="1200px"
+        src="https://youtu.be/7L4K3Q2e-uk"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <br><br>
+    </section>
+ <h2 style="text-align: center; position: relative; top: 70px">Services Offered</h2>
+    <section id="service">
+      
+      <div id="service-1">
+       <img src="https://www.sfaiwala.com/images/sewerage.jpg" id="service_img">
+       <p id="descripiton" >SERWAGE CLEANING</p>
+      </div>
+    
+    <div id="service-2">
+      <img src="https://www.sfaiwala.com/images/water-tank.jpg"  id="service_img">
+       <p id="descripiton">WATER TANK CLEANING</p>
+      </div>
+
+      <div id="service-3">
+      <img src="https://www.sfaiwala.com/images/ro-cleaner.jpg" id="service_img">
+       <p id="descripiton">R.O CLEANING</p>
+      </div>
+      <br><br> <br>
+      <div id="service-4">
+     <img src="https://www.sfaiwala.com/images/plumber.jpg" id="service_img">
+       <p id="descripiton">PLUMBER SERVICE</p>
+      </div>
+    
+    <div id="service-5">
+     <img src="https://www.sfaiwala.com/images/painter.jpg" id="service_img">
+       <p id="descripiton">PAINTING SERVICE</p>
+      </div>
+
+      <div id="service-6">
+      <img src="https://www.sfaiwala.com/images/tiles-workers.jpg"  id="service_img">
+       <p id="descripiton">TILES WORKERS</p>
+      </div>
+    </section>
+<div id="get-in-touch">
+	<form action="landing page_submit" method="get" accept-charset="utf-8" id="form" function="https://www.freecodecamp.com/email-submit">
+		<input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Get in touch" class="btn" />
+    </form>
+</div>
+<div id="why">
+  <img src="businessman.png" alt="" width="300px" height="auto" style="display: flex; justify-content: center; position: relative; left: 50%; margin-left: -150px; top: -80px">
+  <h3 style="position: relative; bottom: 50px; text-align: center; " >Why Choose US ?</h3>
+</div>
+<div id="choose_us">
+  <div id="fast">
+   <img src="clock.png" alt="" height="auto" width="100px">
+    <h4>FAST AND RELIABLE</h4>
+    <p>We wil do your work in the fastest and perfect possible way</p>
+  </div>
+  <div id="experience">
+    <img src="user-experience.png" alt="" height="auto" width="100px">
+    <h4>5 YEARS OF EXPERIENCE</h4>
+    <p>we have helped more than 5000 households since our inception</p>
+  </div>
+  <div id="cheap">
+    <img src="budget.png" alt="" height="auto" width="100px">
+    <h4>BUDGET FRIENDLY</h4>
+    <p>Our Plans are the most budget friendly in the market</p>
+  </div>
+</div>
+</div>
+</body>
+</html>
